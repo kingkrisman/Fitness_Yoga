@@ -1,0 +1,316 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+  
+  }
+
+  
+::-webkit-scrollbar {
+    display: none;
+    }
+    
+    
+    html {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+    scroll-behavior: smooth; 
+    
+    }
+
+
+
+
+
+
+    .yoga-section {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px 96px;
+      }
+      
+      .section-container {
+        display: flex;
+        width: 1320px;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .section-header {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .header-content {
+        display: flex;
+        width: 375px;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .section-title {
+        color: var(--Gray-800, #343a40);
+        font: 500 52px Fredoka, sans-serif;
+      }
+      
+      .section-subtitle {
+        color: #000;
+        margin-top: 12px;
+        font: 400 16px/2 Inter, sans-serif;
+      }
+      
+      .content-container {
+        display: flex;
+        margin-top: 48px;
+        width: 1320px;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .tabs-wrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        color: var(--Gray-800, #343a40);
+        justify-content: center;
+        font: 700 16px/28px Inter, sans-serif;
+      }
+      
+      .tabs-list {
+        display: flex;
+        align-items: center;
+        gap: 40px 48px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .tab-item {
+        width:125px;
+        height:38px;
+        background-color:transparent;
+        border:none;
+        color:##5F6F21;
+        border-radius:6px;
+        padding-left:16px;
+        padding-right:16px;
+        padding-top:10px;
+        padding-bottom:10px;
+        gap:-10px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-family: ïnter;
+font-weight:bold;
+      }
+      
+      .tab-item-active {
+        align-self: stretch;
+        border-radius: 14px;
+        border: 2px solid var(--Primary-Color, #5f6f52);
+        color: var(--Primary-Color, #5f6f52);
+        margin: auto 0;
+        padding: 12px 18px;
+      }
+      
+      .content-grid {
+        display: flex;
+        margin-top: 48px;
+        width: 100%;
+        gap: 40px 48px;
+        justify-content: start;
+        flex-wrap: wrap;
+      }
+      
+      .image-column {
+        display: flex;
+        min-width: 240px;
+        gap: 10px;
+        justify-content: center;
+        height: 100%;
+        flex: 1;
+        flex-basis: 0%;
+      }
+      
+      .yoga-image {
+        aspect-ratio: 0.83;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        border-radius: 25px;
+        min-width: 240px;
+        flex: 1;
+        flex-basis: 0%;
+      }
+      
+      .content-column {
+        display: flex;
+        min-width: 240px;
+        flex-direction: column;
+        font-family: Inter, sans-serif;
+        color: var(--Gray-800, #343a40);
+        justify-content: start;
+        flex: 1;
+        flex-basis: 0%;
+        margin: auto 0;
+      }
+      
+      .content-header {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+      }
+      
+      .content-title {
+        font-size: 28px;
+        font-weight: 700;
+      }
+      
+      .content-description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 25px;
+      }
+      
+      .features-grid {
+        display: flex;
+        margin-top: 48px;
+        width: 100%;
+        align-items: start;
+        gap: 40px 48px;
+        justify-content: start;
+        flex-wrap: wrap;
+      }
+      
+      .feature-item {
+        display: flex;
+        min-width: 240px;
+        flex-direction: column;
+        justify-content: start;
+        flex: 1;
+        flex-basis: 0%;
+      }
+      
+      .feature-number {
+        border-radius: 500px;
+        border: 3px solid var(--Primary-Color, #5f6f52);
+        min-height: 100px;
+        width: 100px;
+        font-size: 64px;
+        color: var(--Primary-Color, #5f6f52);
+        font-weight: 300;
+        white-space: nowrap;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family:inter;
+      }
+      
+      .feature-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 25px;
+        font-family:inter;
+      }
+      
+      .feature-description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 25px;
+        font-family:inter;
+      }
+      
+      .cta-button {
+        border-radius: 6px;
+        background: var(--Primary-Color, #5f6f52);
+        margin-top: 48px;
+        gap: 8px;
+        color: var(--Default-White, #fff);
+        padding: 16px 24px;
+        font: 600 16px/1 Inter, sans-serif;
+        cursor: pointer;
+
+border:none;
+
+
+
+
+
+        
+      }
+      
+      @media (max-width: 991px) {
+        .section-header {
+          max-width: 100%;
+        }
+        
+        .section-title {
+          font-size: 40px;
+        }
+        
+        .content-container {
+          margin-top: 40px;
+        }
+        
+        .tabs-wrapper {
+          max-width: 100%;
+        }
+        
+        .tabs-list {
+          max-width: 100%;
+        }
+        
+        .content-grid {
+          max-width: 100%;
+          margin-top: 40px;
+        }
+        
+        .image-column {
+          max-width: 100%;
+        }
+        
+        .yoga-image {
+          max-width: 100%;
+        }
+        
+        .content-column {
+          max-width: 100%;
+        }
+        
+        .content-description {
+          max-width: 100%;
+        }
+        
+        .features-grid {
+          max-width: 100%;
+          margin-top: 40px;
+        }
+        
+        .feature-number {
+          font-size: 40px;
+          white-space: initial;
+        }
+        
+        .cta-button {
+          margin-top: 40px;
+          padding: 0 20px;
+        }
+      }
+      
+      
