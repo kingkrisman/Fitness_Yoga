@@ -18,6 +18,27 @@
     scroll-behavior: smooth; 
     
     }
+
+
+
+
+
+
+    @keyframes appear{
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+        opacity: 1;
+        scale: 1;
+        }
+        }
+        
+
+
+
+
    
 #header{
     width: 100%;

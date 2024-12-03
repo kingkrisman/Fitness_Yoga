@@ -1,3 +1,12 @@
+@keyframes growth{
+  from {
+    opacity: 0;
+   clip-path: inset(100% 100% 0 0);
+  }
+  to {
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+  }}
 
   .team-section {
     justify-content: center;
@@ -7,6 +16,11 @@
     flex-direction: column;
     overflow: hidden;
     padding: 96px 10px;
+
+    
+animation: growth  linear;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
   }
   .team-container {
     display: flex;
